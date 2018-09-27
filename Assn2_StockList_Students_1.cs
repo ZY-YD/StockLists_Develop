@@ -237,7 +237,8 @@ namespace Assignment_2
                 {
                     decimal curHoldings = current.StockHolding.Holdings;
                     decimal nextHoldings = current.Next.StockHolding.Holdings;
-                    if (curHoldings > nextHoldings)
+                    //if cur is larger than next, they should be exchanged each other
+                    if (curHoldings > nextHoldings)                
                         this.Swap(current.StockHolding);
                     else
                         current = current.Next;
