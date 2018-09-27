@@ -228,9 +228,10 @@ namespace Assignment_2
         //return type  : NA
         public void SortByValue()
         {
-            int round = this.Length();
+            //defien round as a variable to record loop times
+            int round = this.Length() - 1;
             StockNode current = this.head;
-            for (int i = 0; i < round - 1; i++)
+            for (int i = 0; i < round; i++)
             {
                 while (current.Next != null)
                 {
@@ -251,9 +252,9 @@ namespace Assignment_2
         //return type  : NA
         public void SortByName()
         {
-            int round = this.Length();
+            int round = this.Length() - 1;
             StockNode current = this.head;
-            for (int i = 0; i < round-1; i++)
+            for (int i = 0; i < round; i++)
             {
                 while (current.Next != null)
                 {
